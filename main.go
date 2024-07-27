@@ -10,13 +10,16 @@ func main() {
 
 	listCopy := make([]int, len(list))
 	copy(listCopy, list)
-
 	bubbleSortedList := sort.BubbleSort(listCopy)
 	fmt.Println("Bubble Sort Example:", list, "->", bubbleSortedList)
 
 	listCopy2 := make([]int, len(list))
 	copy(listCopy2, list)
-
 	mergeSortedList := sort.MergeSort(listCopy2)
 	fmt.Println("Merge Sort Example:", list, "->", mergeSortedList)
+
+	listCopy3 := make([]int, len(list))
+	copy(listCopy3, list)
+	insertionSortedList := sort.InsertionSort(listCopy3)
+	fmt.Println("Insertion Sort Example:", list, "->", insertionSortedList)
 }
