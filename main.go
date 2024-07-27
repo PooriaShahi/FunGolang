@@ -13,4 +13,10 @@ func main() {
 
 	bubbleSortedList := sort.BubbleSort(listCopy)
 	fmt.Println("Bubble Sort Example:", list, "->", bubbleSortedList)
+
+	listCopy2 := make([]int, len(list))
+	copy(listCopy2, list)
+
+	mergeSortedList := sort.MergeSort(listCopy2)
+	fmt.Println("Merge Sort Example:", list, "->", mergeSortedList)
 }

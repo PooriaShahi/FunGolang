@@ -1,17 +1,17 @@
 package sort
 
 func BubbleSort(list []int) []int {
-	l := len(list)
+	length := len(list)
 	for i := 0; ; i++ {
-		nswap := 0
-		for j := 0; j < l-1; j++ {
+		numberOfSwap := 0
+		for j := 0; j < length-1; j++ {
 			if list[j] > list[j+1] {
 				list[j], list[j+1] = list[j+1], list[j]
-				nswap += 1
+				numberOfSwap += 1
 			}
 		}
-		l -= 1
-		if nswap == 0 {
+		length -= 1
+		if numberOfSwap == 0 {
 			break
 		}
 	}
